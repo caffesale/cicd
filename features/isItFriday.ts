@@ -1,4 +1,4 @@
-function isItFriday(today) {
+function isItFriday(today: string) {
   if (today === "Friday") {
     return "TGIF";
   } else {

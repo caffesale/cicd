@@ -1,13 +1,6 @@
 import assert from "assert";
 import { Given, When, Then } from "@cucumber/cucumber";
-
-function isItFriday(today) {
-  if (today === "Friday") {
-    return "TGIF";
-  } else {
-    return "Nope";
-  }
-}
+import { isItFriday } from "../isItFriday.js";
 
 Given("today is {string}", function (givenDay) {
   this.today = givenDay;
